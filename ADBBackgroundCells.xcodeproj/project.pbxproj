@@ -18,6 +18,9 @@
 		F0E8B5B116D921D90014B514 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0E8B5B016D921D90014B514 /* Default-568h@2x.png */; };
 		F0E8B5B416D921D90014B514 /* ADBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E8B5B316D921D90014B514 /* ADBViewController.m */; };
 		F0E8B5B716D921D90014B514 /* ADBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0E8B5B516D921D90014B514 /* ADBViewController.xib */; };
+		F0E8B5BF16D923070014B514 /* UITableViewCell+Background.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E8B5BE16D923070014B514 /* UITableViewCell+Background.m */; };
+		F0E8B5C416D9260D0014B514 /* UITableView+Background.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E8B5C316D9260D0014B514 /* UITableView+Background.m */; };
+		F0F0AB0016D92E81006B9F35 /* DEMOUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0AAFF16D92E81006B9F35 /* DEMOUITableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,12 @@
 		F0E8B5B216D921D90014B514 /* ADBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADBViewController.h; sourceTree = "<group>"; };
 		F0E8B5B316D921D90014B514 /* ADBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADBViewController.m; sourceTree = "<group>"; };
 		F0E8B5B616D921D90014B514 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ADBViewController.xib; sourceTree = "<group>"; };
+		F0E8B5BD16D923070014B514 /* UITableViewCell+Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+Background.h"; path = "Src/UITableViewCell+Background.h"; sourceTree = SOURCE_ROOT; };
+		F0E8B5BE16D923070014B514 /* UITableViewCell+Background.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+Background.m"; path = "Src/UITableViewCell+Background.m"; sourceTree = SOURCE_ROOT; };
+		F0E8B5C216D9260D0014B514 /* UITableView+Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableView+Background.h"; path = "Src/UITableView+Background.h"; sourceTree = SOURCE_ROOT; };
+		F0E8B5C316D9260D0014B514 /* UITableView+Background.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableView+Background.m"; path = "Src/UITableView+Background.m"; sourceTree = SOURCE_ROOT; };
+		F0F0AAFE16D92E81006B9F35 /* DEMOUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOUITableViewCell.h; sourceTree = "<group>"; };
+		F0F0AAFF16D92E81006B9F35 /* DEMOUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOUITableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,7 @@
 		F0E8B58E16D921D90014B514 = {
 			isa = PBXGroup;
 			children = (
+				F0E8B5C016D9230D0014B514 /* Src */,
 				F0E8B5A016D921D90014B514 /* ADBBackgroundCells */,
 				F0E8B59916D921D90014B514 /* Frameworks */,
 				F0E8B59816D921D90014B514 /* Products */,
@@ -88,6 +98,8 @@
 				F0E8B5B216D921D90014B514 /* ADBViewController.h */,
 				F0E8B5B316D921D90014B514 /* ADBViewController.m */,
 				F0E8B5B516D921D90014B514 /* ADBViewController.xib */,
+				F0F0AAFE16D92E81006B9F35 /* DEMOUITableViewCell.h */,
+				F0F0AAFF16D92E81006B9F35 /* DEMOUITableViewCell.m */,
 				F0E8B5A116D921D90014B514 /* Supporting Files */,
 			);
 			path = ADBBackgroundCells;
@@ -105,6 +117,18 @@
 				F0E8B5B016D921D90014B514 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0E8B5C016D9230D0014B514 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				F0E8B5BD16D923070014B514 /* UITableViewCell+Background.h */,
+				F0E8B5BE16D923070014B514 /* UITableViewCell+Background.m */,
+				F0E8B5C216D9260D0014B514 /* UITableView+Background.h */,
+				F0E8B5C316D9260D0014B514 /* UITableView+Background.m */,
+			);
+			name = Src;
+			path = ADBBackgroundCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +201,9 @@
 				F0E8B5A716D921D90014B514 /* main.m in Sources */,
 				F0E8B5AB16D921D90014B514 /* ADBAppDelegate.m in Sources */,
 				F0E8B5B416D921D90014B514 /* ADBViewController.m in Sources */,
+				F0E8B5BF16D923070014B514 /* UITableViewCell+Background.m in Sources */,
+				F0E8B5C416D9260D0014B514 /* UITableView+Background.m in Sources */,
+				F0F0AB0016D92E81006B9F35 /* DEMOUITableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +241,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alberto De Bortoli (H348E8ZLY2)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -229,6 +256,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "15B9C348-A9AC-4170-9D74-DB00227F8689";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -245,7 +273,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -299,6 +326,7 @@
 				F0E8B5BC16D921D90014B514 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
