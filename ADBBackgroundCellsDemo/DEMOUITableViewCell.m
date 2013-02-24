@@ -14,9 +14,7 @@
 - (void)prepareForReuse
 {
     [super prepareForReuse];
-    [self.invocationOperation cancel];
-    self.invocationOperation = nil;
-    self.isRunning = @NO;
+    [self prepareForNewBackgroundJob];
 
     self.textLabel.text = @"Reused cell";
     self.detailTextLabel.text = @"performing background operation...";

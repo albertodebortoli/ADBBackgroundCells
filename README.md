@@ -27,7 +27,7 @@ Usage:
 		...
 		[info setObject:@"Long job output" forKey:@"output"];
     } callbackBlock:^(id cell){
-		DEMOUITableViewCell *c = (DEMOUITableViewCell *)cell;
+		MyUITableViewCell *c = (MyUITableViewCell *)cell;
         // callback to update the UI
 		c.textLabel.text = [info objectForKey:@"output"];
 		...
@@ -43,14 +43,12 @@ Usage:
 - (void)prepareForReuse
 {
     [super prepareForReuse];
-    [self.invocationOperation cancel];
-    self.invocationOperation = nil;
-    self.isRunning = nil;
+	[self prepareForNewBackgroundJob];
 	...
 }
 ```
 
-- last but not least, create a `NSOperationQueue` in the `viewDidLoad` method of the controller containing the table view
+- last but not least, create a `NSOperationQueue` in a safe place (the `viewDidLoad` method or the designated initializer of the controller containing the table view)
 
 ``` objective-c
 - (void)viewDidLoad

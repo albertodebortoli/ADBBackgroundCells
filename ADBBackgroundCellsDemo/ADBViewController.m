@@ -48,12 +48,14 @@
     __block NSMutableDictionary *info = [NSMutableDictionary dictionary];
     
     [cell addBackgroundBlock:^{
+        // long time job performed on a background thread
         for (int i = 0; i < 5000000; i++) {
             i++;
             i--;
         }
         [info setObject:@"Long job output" forKey:@"output"];
     } callbackBlock:^(id theCell){
+        // callback to update the UI
         DEMOUITableViewCell *c = (DEMOUITableViewCell *)theCell;
         c.textLabel.text = [NSString stringWithFormat:@"Done (%d): <%@>", indexPath.row, [info objectForKey:@"output"]];
         c.detailTextLabel.text = @"callback updated the UI on main thread";
