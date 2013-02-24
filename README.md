@@ -4,6 +4,8 @@ ADBBackgroundCells
 ADBBackgroundCells allow lazy loading for UITableViewCell objects performing a long time job in background without blocking the UI. NSInvocationOperation are used under the hood in place of GCD (Grand Central Dispatch) since operations put in a NSOperationQueue object can be canceled. This threading fashion allows optimized long scrolling where a lot of cells are displayed and immediately reused/disappeared, without the obligation to execute the job of no more visible cells.
 ADBBackgroundCells are block-based and use Objective-C runtime. 
 
+If you'd like to include this component as a pod using [CocoaPods](http://cocoapods.org/), just add the following line to your Podfile: `pod "ADBBackgroundCells"`
+
 Try out the included demo project.
 
 Usage:
