@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F0C3349516DA259500198805 /* ADBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C3349416DA259500198805 /* ADBAppDelegate.m */; };
 		F0C3349816DA259E00198805 /* ADBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C3349716DA259E00198805 /* ADBViewController.m */; };
-		F0C3349B16DA25A700198805 /* DEMOUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C3349A16DA25A700198805 /* DEMOUITableViewCell.m */; };
 		F0C3349E16DA25B100198805 /* ADBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0C3349C16DA25B100198805 /* ADBViewController.xib */; };
 		F0C334A316DA25D300198805 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C334A216DA25D300198805 /* main.m */; };
 		F0C334A616DA25E400198805 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0C334A416DA25E400198805 /* InfoPlist.strings */; };
@@ -28,8 +27,6 @@
 		F0C3349416DA259500198805 /* ADBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADBAppDelegate.m; path = ADBBackgroundCellsDemo/ADBAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		F0C3349616DA259E00198805 /* ADBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADBViewController.h; path = ADBBackgroundCellsDemo/ADBViewController.h; sourceTree = SOURCE_ROOT; };
 		F0C3349716DA259E00198805 /* ADBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADBViewController.m; path = ADBBackgroundCellsDemo/ADBViewController.m; sourceTree = SOURCE_ROOT; };
-		F0C3349916DA25A700198805 /* DEMOUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DEMOUITableViewCell.h; path = ADBBackgroundCellsDemo/DEMOUITableViewCell.h; sourceTree = SOURCE_ROOT; };
-		F0C3349A16DA25A700198805 /* DEMOUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DEMOUITableViewCell.m; path = ADBBackgroundCellsDemo/DEMOUITableViewCell.m; sourceTree = SOURCE_ROOT; };
 		F0C3349D16DA25B100198805 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ADBBackgroundCellsDemo/en.lproj/ADBViewController.xib; sourceTree = SOURCE_ROOT; };
 		F0C3349F16DA25C600198805 /* ADBBackgroundCellsDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ADBBackgroundCellsDemo-Info.plist"; path = "ADBBackgroundCellsDemo/ADBBackgroundCellsDemo-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F0C334A016DA25C600198805 /* ADBBackgroundCellsDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ADBBackgroundCellsDemo-Prefix.pch"; path = "ADBBackgroundCellsDemo/ADBBackgroundCellsDemo-Prefix.pch"; sourceTree = SOURCE_ROOT; };
@@ -109,8 +106,6 @@
 				F0C3349616DA259E00198805 /* ADBViewController.h */,
 				F0C3349716DA259E00198805 /* ADBViewController.m */,
 				F0C3349C16DA25B100198805 /* ADBViewController.xib */,
-				F0C3349916DA25A700198805 /* DEMOUITableViewCell.h */,
-				F0C3349A16DA25A700198805 /* DEMOUITableViewCell.m */,
 				F0E8B5A116D921D90014B514 /* Supporting Files */,
 			);
 			name = ADBBackgroundCellsDemo;
@@ -200,7 +195,6 @@
 			files = (
 				F0C3349516DA259500198805 /* ADBAppDelegate.m in Sources */,
 				F0C3349816DA259E00198805 /* ADBViewController.m in Sources */,
-				F0C3349B16DA25A700198805 /* DEMOUITableViewCell.m in Sources */,
 				F0C334A316DA25D300198805 /* main.m in Sources */,
 				F0C334B216DA25FC00198805 /* UITableView+Background.m in Sources */,
 				F0C334B316DA25FC00198805 /* UITableViewCell+Background.m in Sources */,

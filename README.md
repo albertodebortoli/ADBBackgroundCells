@@ -39,17 +39,6 @@ Usage:
 }
 ```
 
-- to successfully use the ADBBackgroundCells feature the cells should be reused so the `prepareForReuse` method will be called. Your `UITableViewCell` subclass must implement `prepareForReuse` at least as follows:
-
-``` objective-c
-- (void)prepareForReuse
-{
-    [super prepareForReuse];
-	[self prepareForNewBackgroundJob];
-	...
-}
-```
-
 - last but not least, create a `NSOperationQueue` in a safe place (the `viewDidLoad` method or the designated initializer of the controller containing the table view)
 
 ``` objective-c

@@ -1,7 +1,7 @@
 //
 //  UITableViewCell+Background.m
 //  ADBBackgroundCells
-//  v1.0.0
+//  v1.1.0
 //
 //  Created by Alberto De Bortoli on 2/23/13.
 //  Copyright (c) 2013 Alberto De Bortoli. All rights reserved.
@@ -79,6 +79,8 @@ NSString const *kUITableViewCellCallbackBlock       = @"callbackBlock";
              callbackBlock:(CellCallbackBlock)callbackBlock
                 usingQueue:(NSOperationQueue *)operationQueue
 {
+    [self prepareForNewBackgroundJob];
+    
     self.backgroundBlock = backgroundBlock;
     self.callbackBlock = callbackBlock;
     
@@ -88,14 +90,14 @@ NSString const *kUITableViewCellCallbackBlock       = @"callbackBlock";
     [operationQueue addOperation:self.invocationOperation];
 }
 
+#pragma mark - Private
+
 - (void)prepareForNewBackgroundJob
 {
     [self.invocationOperation cancel];
     self.invocationOperation = nil;
     self.isRunning = nil;
 }
-
-#pragma mark - Private
 
 - (void)backgroundSelector
 {

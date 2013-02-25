@@ -9,7 +9,6 @@
 #import "ADBViewController.h"
 #import "UITableView+Background.h"
 #import "UITableViewCell+Background.h"
-#import "DEMOUITableViewCell.h"
 
 @interface ADBViewController ()
 
@@ -37,13 +36,16 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *reuseCellId = @"reuseCellId";
-    DEMOUITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseCellId];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseCellId];
     if (!cell) {
-        cell = [[DEMOUITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseCellId];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseCellId];
         cell.textLabel.text = @"New cell";
-        cell.detailTextLabel.text = @"performing background operation...";
-        cell.accessoryType = UITableViewCellAccessoryNone;
+    } else {
+        cell.textLabel.text = @"Reused cell";
     }
+    
+    cell.detailTextLabel.text = @"performing background operation...";
+    cell.accessoryType = UITableViewCellAccessoryNone;
     
     __block NSMutableDictionary *info = [NSMutableDictionary dictionary];
     
@@ -56,7 +58,7 @@
         [info setObject:@"Long job output" forKey:@"output"];
     } callbackBlock:^(id theCell){
         // callback to update the UI
-        DEMOUITableViewCell *c = (DEMOUITableViewCell *)theCell;
+        UITableViewCell *c = (UITableViewCell *)theCell;
         c.textLabel.text = [NSString stringWithFormat:@"Done (%d): <%@>", indexPath.row, [info objectForKey:@"output"]];
         c.detailTextLabel.text = @"callback updated the UI on main thread";
         c.backgroundColor = [UIColor greenColor];

@@ -1,7 +1,7 @@
 //
 //  UITableViewCell+Background.h
 //  ADBBackgroundCells
-//  v1.0.0
+//  v1.1.0
 //
 //  Created by Alberto De Bortoli on 2/23/13.
 //  Copyright (c) 2013 Alberto De Bortoli. All rights reserved.
@@ -37,11 +37,6 @@ typedef void (^CellCallbackBlock)(id cell);
 - (void)addBackgroundBlock:(VoidBlock)backgroundBlock
              callbackBlock:(CellCallbackBlock)callbackBlock
                 usingQueue:(NSOperationQueue *)operationQueue;
-
-/**
- This method should be called in the prepareForReuse method of the UITableViewCell subclass
- */
-- (void)prepareForNewBackgroundJob;
 
 @property (nonatomic, assign) NSNumber *isRunning;
 @property (nonatomic, strong) NSInvocationOperation *invocationOperation;
