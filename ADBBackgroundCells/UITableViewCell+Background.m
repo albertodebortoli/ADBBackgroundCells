@@ -1,7 +1,7 @@
 //
 //  UITableViewCell+Background.m
 //  ADBBackgroundCells
-//  v1.1.0
+//  v1.1.1
 //
 //  Created by Alberto De Bortoli on 2/23/13.
 //  Copyright (c) 2013 Alberto De Bortoli. All rights reserved.
@@ -57,7 +57,7 @@ NSString const *kUITableViewCellCallbackBlock       = @"callbackBlock";
 - (void)setBackgroundBlock:(VoidBlock)backgroundBlock
 {
     [self willChangeValueForKey:@"backgroundBlock"];
-    objc_setAssociatedObject(self, (__bridge const void *)(kUITableViewCellBackgroundBlock), backgroundBlock, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, (__bridge const void *)(kUITableViewCellBackgroundBlock), backgroundBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
     [self didChangeValueForKey:@"backgroundBlock"];
 }
 
@@ -69,7 +69,7 @@ NSString const *kUITableViewCellCallbackBlock       = @"callbackBlock";
 - (void)setCallbackBlock:(CellCallbackBlock)callbackBlock
 {
     [self willChangeValueForKey:@"callbackBlock"];
-    objc_setAssociatedObject(self, (__bridge const void *)(kUITableViewCellCallbackBlock), callbackBlock, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, (__bridge const void *)(kUITableViewCellCallbackBlock), callbackBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
     [self didChangeValueForKey:@"callbackBlock"];
 }
 

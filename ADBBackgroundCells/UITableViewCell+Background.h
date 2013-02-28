@@ -1,7 +1,7 @@
 //
 //  UITableViewCell+Background.h
 //  ADBBackgroundCells
-//  v1.1.0
+//  v1.1.1
 //
 //  Created by Alberto De Bortoli on 2/23/13.
 //  Copyright (c) 2013 Alberto De Bortoli. All rights reserved.
@@ -38,9 +38,9 @@ typedef void (^CellCallbackBlock)(id cell);
              callbackBlock:(CellCallbackBlock)callbackBlock
                 usingQueue:(NSOperationQueue *)operationQueue;
 
-@property (nonatomic, assign) NSNumber *isRunning;
+@property (nonatomic, strong) NSNumber *isRunning;
 @property (nonatomic, strong) NSInvocationOperation *invocationOperation;
-@property (nonatomic, strong) VoidBlock backgroundBlock;
-@property (nonatomic, strong) CellCallbackBlock callbackBlock;
+@property (nonatomic, copy) VoidBlock backgroundBlock;
+@property (nonatomic, copy) CellCallbackBlock callbackBlock;
 
 @end
