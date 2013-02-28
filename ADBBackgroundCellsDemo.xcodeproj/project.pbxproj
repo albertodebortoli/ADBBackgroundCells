@@ -282,10 +282,12 @@
 		F0E8B5BB16D921D90014B514 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ADBBackgroundCellsDemo/ADBBackgroundCellsDemo-Prefix.pch";
 				INFOPLIST_FILE = "ADBBackgroundCellsDemo/ADBBackgroundCellsDemo-Info.plist";
 				PRODUCT_NAME = ADBBackgroundCellsDemo;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -293,10 +295,12 @@
 		F0E8B5BC16D921D90014B514 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ADBBackgroundCellsDemo/ADBBackgroundCellsDemo-Prefix.pch";
 				INFOPLIST_FILE = "ADBBackgroundCellsDemo/ADBBackgroundCellsDemo-Info.plist";
 				PRODUCT_NAME = ADBBackgroundCellsDemo;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
