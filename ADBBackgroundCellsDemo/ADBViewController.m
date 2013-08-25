@@ -7,12 +7,8 @@
 //
 
 #import "ADBViewController.h"
-#import "UITableView+Background.h"
-#import "UITableViewCell+Background.h"
-
-@interface ADBViewController ()
-
-@end
+#import "UITableView+ADBBackground.h"
+#import "UITableViewCell+ADBBackground.h"
 
 @implementation ADBViewController
 
@@ -30,7 +26,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 100;
+    return 1000;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -47,11 +43,11 @@
     cell.detailTextLabel.text = @"performing background operation...";
     cell.accessoryType = UITableViewCellAccessoryNone;
     
-    __block NSMutableDictionary *info = [NSMutableDictionary dictionary];
+    NSMutableDictionary *info = [NSMutableDictionary dictionary];
     
     [cell addBackgroundBlock:^{
         // long time job performed on a background thread
-        for (int i = 0; i < 5000000; i++) {
+        for (int i = 0; i < 10000000; i++) {
             i++;
             i--;
         }

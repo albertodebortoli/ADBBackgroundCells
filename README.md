@@ -22,7 +22,7 @@ Usage:
         cell = [[MyUITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseCellId];
     }
     	
-    __block NSMutableDictionary *info = [NSMutableDictionary dictionary];
+    NSMutableDictionary *info = [NSMutableDictionary dictionary];
 
     [cell addBackgroundBlock:^{
 		// long time job performed on a background thread

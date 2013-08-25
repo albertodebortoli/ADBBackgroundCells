@@ -15,8 +15,8 @@
 		F0C334AA16DA25EB00198805 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0C334A716DA25EB00198805 /* Default-568h@2x.png */; };
 		F0C334AB16DA25EB00198805 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F0C334A816DA25EB00198805 /* Default.png */; };
 		F0C334AC16DA25EB00198805 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0C334A916DA25EB00198805 /* Default@2x.png */; };
-		F0C334B216DA25FC00198805 /* UITableView+Background.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C334AF16DA25FC00198805 /* UITableView+Background.m */; };
-		F0C334B316DA25FC00198805 /* UITableViewCell+Background.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C334B116DA25FC00198805 /* UITableViewCell+Background.m */; };
+		F0C334B216DA25FC00198805 /* UITableView+ADBBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C334AF16DA25FC00198805 /* UITableView+ADBBackground.m */; };
+		F0C334B316DA25FC00198805 /* UITableViewCell+ADBBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C334B116DA25FC00198805 /* UITableViewCell+ADBBackground.m */; };
 		F0E8B59B16D921D90014B514 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E8B59A16D921D90014B514 /* UIKit.framework */; };
 		F0E8B59D16D921D90014B514 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E8B59C16D921D90014B514 /* Foundation.framework */; };
 		F0E8B59F16D921D90014B514 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E8B59E16D921D90014B514 /* CoreGraphics.framework */; };
@@ -35,10 +35,10 @@
 		F0C334A716DA25EB00198805 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "ADBBackgroundCellsDemo/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		F0C334A816DA25EB00198805 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ADBBackgroundCellsDemo/Default.png; sourceTree = SOURCE_ROOT; };
 		F0C334A916DA25EB00198805 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "ADBBackgroundCellsDemo/Default@2x.png"; sourceTree = SOURCE_ROOT; };
-		F0C334AE16DA25FC00198805 /* UITableView+Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Background.h"; sourceTree = "<group>"; };
-		F0C334AF16DA25FC00198805 /* UITableView+Background.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Background.m"; sourceTree = "<group>"; };
-		F0C334B016DA25FC00198805 /* UITableViewCell+Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Background.h"; sourceTree = "<group>"; };
-		F0C334B116DA25FC00198805 /* UITableViewCell+Background.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Background.m"; sourceTree = "<group>"; };
+		F0C334AE16DA25FC00198805 /* UITableView+ADBBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+ADBBackground.h"; sourceTree = "<group>"; };
+		F0C334AF16DA25FC00198805 /* UITableView+ADBBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ADBBackground.m"; sourceTree = "<group>"; };
+		F0C334B016DA25FC00198805 /* UITableViewCell+ADBBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+ADBBackground.h"; sourceTree = "<group>"; };
+		F0C334B116DA25FC00198805 /* UITableViewCell+ADBBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+ADBBackground.m"; sourceTree = "<group>"; };
 		F0E8B59716D921D90014B514 /* ADBBackgroundCellsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADBBackgroundCellsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0E8B59A16D921D90014B514 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F0E8B59C16D921D90014B514 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,10 +62,10 @@
 		F0C334AD16DA25FC00198805 /* ADBBackgroundCells */ = {
 			isa = PBXGroup;
 			children = (
-				F0C334AE16DA25FC00198805 /* UITableView+Background.h */,
-				F0C334AF16DA25FC00198805 /* UITableView+Background.m */,
-				F0C334B016DA25FC00198805 /* UITableViewCell+Background.h */,
-				F0C334B116DA25FC00198805 /* UITableViewCell+Background.m */,
+				F0C334AE16DA25FC00198805 /* UITableView+ADBBackground.h */,
+				F0C334AF16DA25FC00198805 /* UITableView+ADBBackground.m */,
+				F0C334B016DA25FC00198805 /* UITableViewCell+ADBBackground.h */,
+				F0C334B116DA25FC00198805 /* UITableViewCell+ADBBackground.m */,
 			);
 			path = ADBBackgroundCells;
 			sourceTree = "<group>";
@@ -196,8 +196,8 @@
 				F0C3349516DA259500198805 /* ADBAppDelegate.m in Sources */,
 				F0C3349816DA259E00198805 /* ADBViewController.m in Sources */,
 				F0C334A316DA25D300198805 /* main.m in Sources */,
-				F0C334B216DA25FC00198805 /* UITableView+Background.m in Sources */,
-				F0C334B316DA25FC00198805 /* UITableViewCell+Background.m in Sources */,
+				F0C334B216DA25FC00198805 /* UITableView+ADBBackground.m in Sources */,
+				F0C334B316DA25FC00198805 /* UITableViewCell+ADBBackground.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

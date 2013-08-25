@@ -1,7 +1,7 @@
 //
-//  UITableViewCell+Background.h
+//  UITableViewCell+ADBBackground.h
 //  ADBBackgroundCells
-//  v1.1.1
+//  v2.0.0
 //
 //  Created by Alberto De Bortoli on 2/23/13.
 //  Copyright (c) 2013 Alberto De Bortoli. All rights reserved.
@@ -12,7 +12,7 @@
 typedef void (^VoidBlock)(void);
 typedef void (^CellCallbackBlock)(id cell);
 
-@interface UITableViewCell (Background)
+@interface UITableViewCell (ADBBackground)
 
 /**
  This method should be called in tableView:cellForRowAtIndexPath:. As soon as this
@@ -37,10 +37,5 @@ typedef void (^CellCallbackBlock)(id cell);
 - (void)addBackgroundBlock:(VoidBlock)backgroundBlock
              callbackBlock:(CellCallbackBlock)callbackBlock
                 usingQueue:(NSOperationQueue *)operationQueue;
-
-@property (nonatomic, strong) NSNumber *isRunning;
-@property (nonatomic, strong) NSInvocationOperation *invocationOperation;
-@property (nonatomic, copy) VoidBlock backgroundBlock;
-@property (nonatomic, copy) CellCallbackBlock callbackBlock;
 
 @end
