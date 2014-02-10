@@ -41,6 +41,7 @@
     }
     
     cell.detailTextLabel.text = @"performing background operation...";
+    cell.backgroundColor = [UIColor whiteColor];
     cell.accessoryType = UITableViewCellAccessoryNone;
     
     NSMutableDictionary *info = [NSMutableDictionary dictionary];

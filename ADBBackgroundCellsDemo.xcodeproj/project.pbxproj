@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D322741818A964B80054829A /* LICENSE.markdown in Resources */ = {isa = PBXBuildFile; fileRef = D322741618A964B80054829A /* LICENSE.markdown */; };
+		D322741918A964B80054829A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D322741718A964B80054829A /* README.md */; };
 		F0C3349516DA259500198805 /* ADBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C3349416DA259500198805 /* ADBAppDelegate.m */; };
 		F0C3349816DA259E00198805 /* ADBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C3349716DA259E00198805 /* ADBViewController.m */; };
 		F0C3349E16DA25B100198805 /* ADBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0C3349C16DA25B100198805 /* ADBViewController.xib */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D322741618A964B80054829A /* LICENSE.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.markdown; sourceTree = "<group>"; };
+		D322741718A964B80054829A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		F0C3349316DA259500198805 /* ADBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADBAppDelegate.h; path = ADBBackgroundCellsDemo/ADBAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		F0C3349416DA259500198805 /* ADBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADBAppDelegate.m; path = ADBBackgroundCellsDemo/ADBAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		F0C3349616DA259E00198805 /* ADBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADBViewController.h; path = ADBBackgroundCellsDemo/ADBViewController.h; sourceTree = SOURCE_ROOT; };
@@ -73,6 +77,8 @@
 		F0E8B58E16D921D90014B514 = {
 			isa = PBXGroup;
 			children = (
+				D322741618A964B80054829A /* LICENSE.markdown */,
+				D322741718A964B80054829A /* README.md */,
 				F0C334AD16DA25FC00198805 /* ADBBackgroundCells */,
 				F0E8B5A016D921D90014B514 /* ADBBackgroundCellsDemo */,
 				F0E8B59916D921D90014B514 /* Frameworks */,
@@ -180,6 +186,8 @@
 			files = (
 				F0C3349E16DA25B100198805 /* ADBViewController.xib in Resources */,
 				F0C334A616DA25E400198805 /* InfoPlist.strings in Resources */,
+				D322741818A964B80054829A /* LICENSE.markdown in Resources */,
+				D322741918A964B80054829A /* README.md in Resources */,
 				F0C334AA16DA25EB00198805 /* Default-568h@2x.png in Resources */,
 				F0C334AB16DA25EB00198805 /* Default.png in Resources */,
 				F0C334AC16DA25EB00198805 /* Default@2x.png in Resources */,
