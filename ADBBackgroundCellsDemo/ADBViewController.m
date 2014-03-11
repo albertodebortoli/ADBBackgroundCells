@@ -44,7 +44,7 @@
     cell.backgroundColor = [UIColor whiteColor];
     cell.accessoryType = UITableViewCellAccessoryNone;
     
-    NSMutableDictionary *info = [NSMutableDictionary dictionary];
+    __block id info = nil;
     
     [cell addBackgroundBlock:^{
         // long time job performed on a background thread
@@ -52,11 +52,11 @@
             i++;
             i--;
         }
-        [info setObject:@"Long job output" forKey:@"output"];
+        info = @"Long job output";
     } callbackBlock:^(id theCell){
         // callback to update the UI
         UITableViewCell *c = (UITableViewCell *)theCell;
-        c.textLabel.text = [NSString stringWithFormat:@"Done (%d): <%@>", indexPath.row, [info objectForKey:@"output"]];
+        c.textLabel.text = [NSString stringWithFormat:@"Done (%d): <%@>", indexPath.row, info];
         c.detailTextLabel.text = @"callback updated the UI on main thread";
         c.backgroundColor = [UIColor greenColor];
         c.accessoryType = UITableViewCellAccessoryCheckmark;
